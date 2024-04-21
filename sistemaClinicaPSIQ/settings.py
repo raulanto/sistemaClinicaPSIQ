@@ -43,7 +43,12 @@ LOCAL_APPS=[
     'Catalagos.apps.CatalagosConfig'
 ]
 
-INSTALLED_APPS += LOCAL_APPS
+THIRD_PARTY_APPS = [
+    'simple_history',
+]
+
+INSTALLED_APPS += THIRD_PARTY_APPS + LOCAL_APPS
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -53,6 +58,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # Simple history
+    'simple_history.middleware.HistoryRequestMiddleware',
 ]
 
 ROOT_URLCONF = 'sistemaClinicaPSIQ.urls'
