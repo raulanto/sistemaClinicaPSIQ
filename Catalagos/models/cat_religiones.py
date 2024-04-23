@@ -7,7 +7,7 @@ class TimeStampedModel(models.Model):
     class Meta:
         abstract = True
 
-class cat_regiones(TimeStampedModel):
+class cat_religiones(TimeStampedModel):
     nombre = models.CharField(max_length=30)
     history = HistoricalRecords()
 

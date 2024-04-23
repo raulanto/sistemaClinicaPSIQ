@@ -72,7 +72,7 @@ El comando ``pip install -r requirements.txt`` se utiliza para instalar todos lo
     bash
     
 ```
-python makemigrations Catalago
+python manage.py makemigrations Catalagos
 python manage.py migrate
 ```
 en este caso es  se hace con el ejemplo de catalagos es decir el modulo en cual estes trabajando se haran las makemigrations

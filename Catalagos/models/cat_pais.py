@@ -1,5 +1,6 @@
 from django.db import models
 from simple_history.models import HistoricalRecords
+
 class TimeStampedModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -7,8 +8,9 @@ class TimeStampedModel(models.Model):
     class Meta:
         abstract = True
 
-class cat_escolaridades(TimeStampedModel):
-    nombre = models.CharField(max_length=25)
+
+class cat_pais(TimeStampedModel):
+    nombre = models.CharField(max_length=50)
     history = HistoricalRecords()
 
 
