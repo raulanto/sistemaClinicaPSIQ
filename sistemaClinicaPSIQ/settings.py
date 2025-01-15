@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 ]
 
 LOCAL_APPS=[
-    'Catalagos.apps.CatalagosConfig'
+    'Catalagos.apps.CatalagosConfig',
+    'Persona.apps.PersonaConfig'
 ]
 
 THIRD_PARTY_APPS = [
